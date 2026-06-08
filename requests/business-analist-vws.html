@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!--
+  Synthetic vacancy detail page built from "Aanvraag Inhuur ICT - Business Analist"
+  (Ministerie van VWS, IV-Organisatie). Purpose: host this page on a public URL so the
+  Sentior scraper (Docling -> Markdown -> OpenAI extraction -> enrichment/labels) can
+  ingest it and produce a rawRequest with real labels + labelTree.
+
+  Parser notes (sentior-ai-scraper):
+   - Extraction is text/heading based; <script>/<style> are stripped, og/meta ignored.
+   - Dutch section headings map to jobArticle fields:
+       Functieomschrijving -> function, Organisatie -> organization,
+       Eisen -> requirements, Wensen -> knowHow.
+   - Keep content as plain paragraphs/lists (not tables) and dates/hours as plain text.
+  The JSON-LD block below is harmless (stripped by Docling) but kept for any other
+  generic scraper that does read structured data.
+-->
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Business Analist - Ministerie van VWS (IV-Organisatie) | Den Haag</title>
+  <style>
+    body { font-family: -apple-system, "Segoe UI", Arial, sans-serif; line-height: 1.6;
+           color: #1a1a2e; max-width: 820px; margin: 0 auto; padding: 24px; }
+    h1 { font-size: 28px; margin-bottom: 4px; }
+    h2 { font-size: 20px; margin-top: 32px; border-bottom: 2px solid #0b3d91; padding-bottom: 4px; color: #0b3d91; }
+    .meta { background: #f3f6fb; border: 1px solid #d6e0f0; border-radius: 8px; padding: 16px 20px; margin-top: 16px; }
+    .meta dl { display: grid; grid-template-columns: 220px 1fr; gap: 4px 12px; margin: 0; }
+    .meta dt { font-weight: 600; }
+    ul { margin: 8px 0; }
+    .ko { color: #8a1f1f; font-weight: 600; }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "JobPosting",
+    "title": "Business Analist",
+    "occupationalCategory": "Informatiemanagement / Business Analyse",
+    "employmentType": "CONTRACTOR",
+    "datePosted": "2026-06-08",
+    "validThrough": "2026-07-14T12:00:00+02:00",
+    "hiringOrganization": { "@type": "Organization", "name": "Ministerie van VWS", "department": "IV-Organisatie" },
+    "jobLocation": { "@type": "Place", "address": { "@type": "PostalAddress", "addressLocality": "Den Haag", "postalCode": "1234 AA", "addressCountry": "NL" } },
+    "jobStartDate": "2026-09-01",
+    "estimatedSalary": { "@type": "MonetaryAmount", "currency": "EUR", "value": { "@type": "QuantitativeValue", "unitText": "HOUR" } },
+    "workHours": "36 uur per week (voorkeur flexibel 24-36 uur)"
+  }
+  </script>
+</head>
+<body>
+
+  <h1>Business Analist</h1>
+  <p><strong>Ministerie van VWS &mdash; IV-Organisatie</strong> &middot; Standplaats Den Haag &middot; 36 uur per week</p>
+
+  <div class="meta">
+    <dl>
+      <dt>Opdrachtgever</dt><dd>Ministerie van VWS, IV-Organisatie</dd>
+      <dt>Standplaats</dt><dd>Den Haag (1234 AA) &mdash; offsite werken bespreekbaar</dd>
+      <dt>Dominant kwaliteitenprofiel</dt><dd>Informatiemanagement (4.3.2 Business Analyse)</dd>
+      <dt>Functiegroep</dt><dd>Senior Medewerker Behandelen en Ontwikkelen (schaal 13, range 11-14)</dd>
+      <dt>Startdatum</dt><dd>1 september 2026</dd>
+      <dt>Einddatum</dt><dd>31 december 2026</dd>
+      <dt>Optie op verlenging</dt><dd>Ja, maximaal 2 verlengingen van 3 maanden</dd>
+      <dt>Uren per week</dt><dd>36 uur (voorkeur flexibele inzet 24-36 uur)</dd>
+      <dt>Max. uren initiele termijn</dt><dd>1296 uur</dd>
+      <dt>Dienstverband</dt><dd>Inhuur / opdracht (ZZP of via bureau)</dd>
+      <dt>Aantal posities</dt><dd>1</dd>
+      <dt>Max. CV's per aanbieder</dt><dd>2</dd>
+      <dt>Screening</dt><dd>VOG vereist (screeningsitems 11, 12, 13, 41); geen aanvullend veiligheidsonderzoek</dd>
+      <dt>Geplaatst op</dt><dd>8 juni 2026</dd>
+      <dt>Reageren / offerte indienen voor</dt><dd>14 juli 2026, 12:00 uur</dd>
+    </dl>
+  </div>
+
+  <h2>Functieomschrijving</h2>
+  <p>Opdrachtgever is op zoek naar een ervaren business analist die goed kan samenwerken en daarbij besluitvaardig en doortastend te werk gaat. Opdrachtgever zoekt iemand die graag de leiding neemt binnen een team en projecten en daarbij ondersteuning en advies kan geven aan andere collega&rsquo;s binnen het team.</p>
+
+  <p>De opdracht ziet toe op een organisch gegroeid architectuurlandschap met veel legacy. Opdrachtgever kent op dit moment verschillende typen portalen. Via elk van de portalen kunnen burgers, zorgaanbieders of andere typen stakeholders inloggen om informatie in te zien en/of aan te leveren. Het huidige portaal-landschap kent onder andere de volgende knelpunten:</p>
+  <ul>
+    <li>Verouderde onderliggende applicaties (legacy);</li>
+    <li>Versnipperd landschap geeft extra uitdagingen op het gebied van compliance (onder andere security);</li>
+    <li>Onvoldoende uitstraling als &eacute;&eacute;n organisatie naar buiten toe.</li>
+  </ul>
+
+  <p>Opdrachtgever wil toewerken naar &eacute;&eacute;n toekomstvaste centrale portaal-functionaliteit. Daarbij dienen de volgende acties te worden uitgevoerd, die onderdeel zijn van het werkpakket van de business analist:</p>
+  <ul>
+    <li>De huidige situatie (IST) in kaart brengen, zowel op het gebied van architectuur en functionele/technische eisen als de bijbehorende werkprocessen;</li>
+    <li>Tot een voorstel komen voor een samenhangende nieuwe architectuur en &eacute;&eacute;n centraal proces voor het gebruik van &eacute;&eacute;n organisatiebreed portaal (SOLL);</li>
+    <li>Een advies opstellen op hoofdlijnen over het groeipad van de IST- naar de SOLL-situatie.</li>
+  </ul>
+
+  <p>De business analist is een adviseur voor de inrichting van bedrijfsprocessen, de bedrijfsvoering en de daarvoor benodigde informatievoorziening. De business analist analyseert de behoeften aan informatie en informatiesystemen, uitgaande van de eisen aan de bedrijfsprocessen en de workflow daarbinnen. In het verlengde daarvan wordt meegewerkt aan het vaststellen en verbeteren van de informatievoorziening in het algemeen en aan specifieke informatiesystemen, om daarmee bedrijfsprocessen optimaal te ondersteunen.</p>
+
+  <p>Binnen SAFe is de business analist in de meeste gevallen verantwoordelijk voor het opstellen van de business epics op portfolioniveau. In die hoedanigheid vormt deze rol een belangrijke schakel tussen de bedrijfsvisie enerzijds en de realisatie van de bedrijfsdoelen anderzijds. Op corporate- dan wel domein-portfolioniveau vormt de business analist samen met de enterprise architecten een team dat zorgdraagt voor het opstellen van epics, om de organisatie van werkvoorraad te voorzien. De kanban-werkwijze past hierbij; de voortgang van alle epics wordt gevisualiseerd op een kanban-bord. Voor de epics die de business analist opstelt, kan hij de rol van epic owner aannemen.</p>
+
+  <h2>Organisatie</h2>
+  <p>Opdrachtgever heeft zelf de benodigde functies in huis om de genoemde acties uit te voeren, denk hierbij aan een Enterprise Architect, Domein Architect, Security Officer, UX-designer, Technical Lead en Product Owner en een Scrum master. In aanvulling op deze functies zoekt opdrachtgever nog een business analist.</p>
+  <p>Opdrachtgever is onderdeel van een IV-Organisatie (informatievoorziening) bestaande uit:</p>
+  <ul>
+    <li><strong>CIO</strong>: het stellen van kaders en sturing daarop om vooruit te blijven lopen op IT-gebied voor de overheid;</li>
+    <li><strong>IIMA (Informatiemanagement en Architectuur)</strong>: het kloppend hart van de organisatie waar ontwikkeling plaatsvindt;</li>
+    <li><strong>GIV (Generieke Informatievoorziening)</strong>: de basis waarin het platform, netwerk en hosting zich bevinden.</li>
+  </ul>
+
+  <h2>Eisen</h2>
+  <p class="ko">Let op: de eisen zijn knock-out criteria.</p>
+  <ul>
+    <li>HBO werk- en denkniveau (afgeronde HBO-opleiding / HBO-diploma);</li>
+    <li>In het bezit van een ITIL-certificaat;</li>
+    <li>In het bezit van een Agile/Scrum-certificaat;</li>
+    <li>Dominant professioneel kennisgebied: Informatiemanagement;</li>
+    <li>Minimaal 5 jaar aantoonbare ervaring als business analist;</li>
+    <li>Minimaal 5 jaar aantoonbare ervaring met het opstellen van business analyses in ICT-projecten;</li>
+    <li>Minimaal 5 jaar aantoonbare ervaring met het maken van heldere analyses en het schrijven van plannen van aanpak;</li>
+    <li>Minimaal 3 jaar aantoonbare ervaring met het co&ouml;rdineren van taken en werkzaamheden in ICT-projecten.</li>
+  </ul>
+
+  <h2>Wensen</h2>
+  <ul>
+    <li>Aantoonbare kennis van BIO (Baseline Informatiebeveiliging Overheid), NIS2 en ABRO;</li>
+    <li>Minimaal 5 jaar gewerkt bij of voor de overheid.</li>
+  </ul>
+  <p>Aanvullende kennisgebieden en opleidingen die als pre worden gezien: TOGAF Practitioner, Bachelor Bedrijfskundige Informatica, Information Security Foundation based on ISO/IEC 27002, Ontwikkeling Informatiesystemen Foundation, Object Ori&euml;ntatie Foundation, Applicatiemanagement Foundation, ITSM Foundation, ITIL Foundation, SAFe Agilist, SAFe Product Owner en Business Information Management Foundation (BiSL).</p>
+
+  <h2>Competenties</h2>
+  <p>Voor deze opdracht zijn de volgende competenties van belang: analyseren, creativiteit, netwerken, omgevingsbewustzijn, organisatiesensitiviteit, overtuigingskracht, plannen en organiseren en resultaatgerichtheid. Daarnaast wordt gevraagd om leidinggeven, besluitvaardigheid en doortastendheid.</p>
+
+  <h2>Aanvullende informatie</h2>
+  <p>De offerteaanvraag is gepland op 6 juli 2026 (12:00 uur). Vragen kunnen worden gesteld tot uiterlijk 8 juli 2026 (12:00 uur) en worden uiterlijk 10 juli 2026 (12:00 uur) beantwoord. Offertes dienen uiterlijk 14 juli 2026 (12:00 uur) te worden ingediend. Vrije vervanging is toegestaan; parttime invulling onder 24 uur is niet toegestaan. De vergoeding voor dienstreizen is inbegrepen in het tarief.</p>
+
+</body>
+</html>
